@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark: hsl(249, 10%, 26%);
+  --Grayish: hsl(246, 25%, 77%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(/images/bg-intro-desktop.png);
+  background-color: var(--Red);
+  display: flex;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  margin: auto;
+}
+.leftSide {
+  width: 300px;
+  color: white;
+}
+.rightSide {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.signUpTop {
+  height: 10vh;
+  background: hsl(248, 32%, 49%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+form {
+  height: 65vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  border-radius: 10px;
+}
+.input {
+  height: 40px;
+  padding: 5px;
+  border: 2px solid hsl(246, 25%, 77%);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+input {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+input::after {
+  content: "input aall";
+}
+.errorImg {
+  width: 15px;
+  height: 15px;
+  display: none;
+}
+
+button {
+  background: var(--Green);
+  border: none;
+  height: 35px;
+  border-radius: 5px;
+  color: white;
+  word-spacing: 2px;
+}
+form p {
+  font-size: 10px;
+}
+p span {
+  color: var(--Red);
+}
+.warning-msg {
+  color: var(--Red);
+  font-style: italic;
+  font-size: 15px;
+  display: none;
+}
+@media (max-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
